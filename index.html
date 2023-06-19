@@ -1,14 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	<script>
-		let userAge = parseInt(prompt('Input yours age','18'));
-		const  minAllowedUserAge = 18 
-	</script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // На роботу компанія прияймає працівників від 32 до 45 років. З клавіатури вводиться вік претендента. З'ясувати, чи може віе бути прийнятий на роботу.
+
+      /* let employeeAge = parseInt(prompt("Your age is"));
+          const minAge = 32;
+          const maxAge = 45;
+
+          if (employeeAge >= minAge && employeeAge <= maxAge) alert("ok");
+          else alert("no");
+
+      max = a > b ? a : b; */
+      // З клавіатури вводиться кількість балів. Вивести на екран оцінку прописом ( задовільн, добре чи відмінно).
+      // Крок 0 вводимо позначення
+      // Кількість балів - score
+      // Крок 1. Введення велечин
+      /*
+          let score = parseInt(prompt("Ваша оцінка"));
+          // Крок 2 Розв'язок
+          if (score === 5) alert("відмінно");
+          else if (score === 4) alert("добре");
+          else if (score === 3) alert("задовільно");
+          else if (score === 1 || score === 2) alert("двійка");
+          else alert("невірна оцінка");
+      */
+      //-----------------------------------------------------
+      // З клавіатури вводиться кількість балів. Вивести на екран оцінку прописом ( задовільн, добре чи відмінно).
+      // Крок 0 вводимо позначення
+      var score = parseInt(prompt("score", ""));
+      var result;
+      // 	Знаходимо результат за допомогою switch
+      /*
+      switch (score) {
+        case 2:
+          result = "Незадовільно";
+          break;
+        case 3:
+          result = "Задовільно";
+          break;
+        case 4:
+          result = "Добре";
+          break;
+        case 5:
+          result = "Відмінно";
+          break;
+        default:
+          result = "Неправильна оцінка.";
+          break;
+      }
+      alert(result);
+		*/
+
+      // З клавіатури вводиться номер місця, яку зайняв спортсмен. Вивести, яку медаль він отримає: 1-золота,
+      // 2 -  срібна
+      // 3 - бронзова
+      // все інше - грамота
+
+      // Крок 0 вводимо позначення
+      // номер місця - placeNumber
+      // Крок 1. Введення велечин
+      let placeNumber = parseInt(prompt("Номер місця яке зайняв спортсмен"));
+      // Розв'язок задачі
+      let res;
+      switch (placeNumber) {
+        case 1:
+          res = "Золота";
+          break;
+        case 2:
+          res = "Срібна";
+          break;
+        case 3:
+          res = "Бронзова";
+          break;
+        default:
+          res = "Спортсмен отримує грамоту";
+          break;
+      }
+    </script>
+  </body>
 </html>
